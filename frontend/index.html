@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Rohan Halder — bike rides, reels, captions and songs." />
+  <meta name="theme-color" content="#071014" />
+  <title>Rohan Halder | Ride On</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700;800;900&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="./css/styles.css" />
+</head>
+<body>
+  <div class="page-shell">
+    <header class="topbar">
+      <div class="wrap topbar-inner">
+        <a href="#home" class="brand" aria-label="Rohan Halder home">RH <span>RIDE</span></a>
+        <nav class="main-nav" aria-label="Main navigation">
+          <a href="#reels">Reels</a>
+          <a href="#analytics">Analytics</a>
+          <a class="ig-pill" href="https://instagram.com/lilboy.rohan" target="_blank" rel="noreferrer">@lilboy.rohan</a>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero" id="home">
+        <div class="wrap hero-grid">
+          <div class="hero-copy">
+            <p class="eyebrow">Accountant by profession · rider by passion</p>
+            <h1>Rohan <span>Halder</span></h1>
+            <p class="tagline">
+              Numbers by day. Open roads by heart. I ride, capture, and share every lane with love captions and songs.
+            </p>
+            <div class="cta-row">
+              <button id="rideOnBtn" class="primary-btn" type="button">
+                Scroll / Ride On <span aria-hidden="true">↓</span>
+              </button>
+            </div>
+          </div>
+
+          <div class="portrait-panel">
+            <div class="portrait-ring"></div>
+            <canvas id="portrait-canvas" aria-label="3D portrait"></canvas>
+            <div class="engine-readout">
+              <span>Engine mood</span>
+              <strong>Ride mode: ON</strong>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="reels">
+        <div class="wrap">
+          <div class="section-heading">
+            <div>
+              <p class="eyebrow">The road, the song, the feeling</p>
+              <h2>Viral <em>Reels</em></h2>
+            </div>
+            <p class="section-sub">
+              Bike ride reels with love captions and songs — designed to match the energy of the road.
+            </p>
+          </div>
+
+          <div class="reel-layout">
+            <article class="reel-card">
+              <div id="ambilight" class="ambilight"></div>
+
+              <div id="reelVisual" class="reel-visual">
+                <div class="reel-banner">
+                  <div class="play-indicator">▶</div>
+                  <h3 id="reelVisualTitle">Midnight Miles</h3>
+                  <small>RIDE PREVIEW</small>
+                </div>
+              </div>
+
+              <div class="reel-overlay">
+                <p id="reelCaption" class="reel-caption"></p>
+                <p id="reelSong" class="reel-song"></p>
+
+                <div class="reel-metrics">
+                  <span><b id="reelViews">0</b> views</span>
+                  <span><b id="reelLikes">0</b> likes</span>
+                  <span id="reelDate">DATE</span>
+                </div>
+              </div>
+            </article>
+
+            <aside class="reel-sidebar">
+              <div class="sidebar-top">
+                <p class="tiny-tag">Now showing</p>
+                <h3 id="reelTitle">Midnight Miles</h3>
+                <p id="reelDescription" class="reel-description"></p>
+              </div>
+
+              <div class="sidebar-actions">
+                <button id="soundToggle" class="sound-toggle" type="button" aria-pressed="false">
+                  Sound is off · demo preview
+                </button>
+
+                <div class="control-row">
+                  <button id="prevReel" class="control-btn" type="button" aria-label="Previous reel">←</button>
+                  <button id="nextReel" class="control-btn" type="button" aria-label="Next reel">→</button>
+                  <span id="reelCounter" class="counter">01 / 03</span>
+                </div>
+              </div>
+            </aside>
+          </div>
+        </div>
+      </section>
+
+      <section class="section analytics-section" id="analytics">
+        <div class="wrap">
+          <div class="section-heading">
+            <div>
+              <p class="eyebrow">The numbers behind the rides</p>
+              <h2>Ride <em>Stats</em></h2>
+            </div>
+            <p class="section-sub">
+              Demo dashboard layout. When Instagram is connected, this panel pulls daily snapshots from the backend.
+            </p>
+          </div>
+
+          <div class="stats-grid">
+            <article class="stat-card">
+              <span>Followers</span>
+              <strong id="followersValue">12.8K</strong>
+              <small id="followersDelta">+184 in 15 days</small>
+            </article>
+
+            <article class="stat-card">
+              <span>Total likes</span>
+              <strong id="likesValue">86.4K</strong>
+              <small>Across all reels</small>
+            </article>
+
+            <article class="stat-card">
+              <span>Total reels</span>
+              <strong id="reelsValue">42</strong>
+              <small>Published on Instagram</small>
+            </article>
+
+            <article class="stat-card">
+              <span>Total views</span>
+              <strong id="viewsValue">1.2M</strong>
+              <small>Lifetime reach</small>
+            </article>
+          </div>
+
+          <div class="dashboard-grid">
+            <article class="chart-card">
+              <div class="panel-title">
+                <h3>Last 15 Days</h3>
+                <span>Reach & likes</span>
+              </div>
+              <canvas id="analyticsChart" width="700" height="240" aria-label="Analytics chart"></canvas>
+            </article>
+
+            <article class="summary-card">
+              <div class="summary-header">
+                <p class="tiny-tag">15-Day Summary</p>
+                <h3>Momentum</h3>
+              </div>
+              <strong id="summaryGrowth">+18.6%</strong>
+              <p id="summaryText">
+                Ride momentum is trending up. Daily snapshots populate this summary once the Instagram API is connected.
+              </p>
+            </article>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="wrap footer-inner">
+        <span>© <span id="year"></span> Rohan Halder</span>
+        <span>For the love of the ride</span>
+      </div>
+    </footer>
+  </div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+  <script src="./js/intro3d.js"></script>
+  <script src="./js/reels.js"></script>
+  <script src="./js/analytics.js"></script>
+  <script src="./js/app.js"></script>
+</body>
+</html>

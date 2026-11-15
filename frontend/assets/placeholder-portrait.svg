@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 1000" role="img" aria-label="Placeholder portrait">
+  <defs>
+    <linearGradient id="bg" x1="0%" x2="100%" y1="0%" y2="100%">
+      <stop offset="0%" stop-color="#0d1b24"/>
+      <stop offset="50%" stop-color="#173842"/>
+      <stop offset="100%" stop-color="#0c1620"/>
+    </linearGradient>
+    <linearGradient id="shirt" x1="0%" x2="100%" y1="0%" y2="100%">
+      <stop offset="0%" stop-color="#1a2b32"/>
+      <stop offset="100%" stop-color="#0e1d24"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="1000" fill="url(#bg)"/>
+  <circle cx="400" cy="300" r="170" fill="#d8b08b"/>
+  <path d="M236 720c28-118 104-185 164-185s138 70 164 185H236z" fill="#f3d7dd"/>
+  <path d="M260 280c26-126 103-190 190-190s165 78 191 190c-30-26-76-36-123-36-118 0-198 74-258 152z" fill="#1d2327"/>
+  <path d="M220 440c30-66 86-100 180-100s150 37 180 100v170H220V440z" fill="url(#shirt)"/>
+  <rect x="270" y="210" width="260" height="40" rx="18" fill="#9efb5d" opacity="0.8"/>
+  <circle cx="168" cy="160" r="58" fill="#45baf0" opacity="0.22"/>
+  <circle cx="662" cy="182" r="72" fill="#9efb5d" opacity="0.18"/>
+  <circle cx="550" cy="830" r="130" fill="#45baf0" opacity="0.12"/>
+</svg>
